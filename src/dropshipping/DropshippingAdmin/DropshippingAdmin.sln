@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35707.178 d17.12
+VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DropshippingAdmin", "DropshippingAdmin.csproj", "{1C2AE9CE-B623-48E3-BBF4-D7A48EA37F14}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaymentService", "..\PaymentService\PaymentService.csproj", "{47D79C70-5DB4-4255-AD62-B7D24FC17B8D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhatsAppService", "..\WhatsAppService\WhatsAppService.csproj", "{31E3F097-5074-4F06-A446-FD444D63FACB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfrastructureService", "..\InfrastructureService\InfrastructureService.csproj", "{DF4DADE5-BFD9-4023-A31F-EAC19DF41E0C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{31E3F097-5074-4F06-A446-FD444D63FACB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{31E3F097-5074-4F06-A446-FD444D63FACB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{31E3F097-5074-4F06-A446-FD444D63FACB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF4DADE5-BFD9-4023-A31F-EAC19DF41E0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF4DADE5-BFD9-4023-A31F-EAC19DF41E0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF4DADE5-BFD9-4023-A31F-EAC19DF41E0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF4DADE5-BFD9-4023-A31F-EAC19DF41E0C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
