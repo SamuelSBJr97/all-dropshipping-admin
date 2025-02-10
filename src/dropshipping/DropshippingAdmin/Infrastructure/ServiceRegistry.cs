@@ -1,6 +1,6 @@
 // ServiceRegistry.cs - Scaffold do arquivo
 
-namespace DropshippingAdmin.Kernel
+namespace DropshippingAdmin.Infrastructure
 {
     public class ServiceRegistry
     {
