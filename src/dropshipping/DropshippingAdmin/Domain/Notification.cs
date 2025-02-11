@@ -6,21 +6,20 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
 
-namespace InfrastructureService.DBModels;
+namespace InfrastructureService.Domain;
 
-[Table("WhatsAppMessagesStatus")]
-public partial class WhatsAppMessagesStatus
+public partial class Notification
 {
     [Key]
     public Guid Id { get; set; }
 
-    [Required]
-    [StringLength(50)]
-    public string Status { get; set; }
+    public Guid UserId { get; set; }
 
-    [Column(TypeName = "datetime")]
+    public string Type { get; set; }
+
+    public string Content { get; set; }
+
     public DateTime? SentAt { get; set; }
 
-    [InverseProperty("StatusNavigation")]
-    public virtual ICollection<WhatsAppMessage> WhatsAppMessages { get; set; } = new List<WhatsAppMessage>();
+    public virtual User User { get; set; }
 }

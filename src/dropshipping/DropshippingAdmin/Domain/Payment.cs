@@ -6,31 +6,23 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
 
-namespace InfrastructureService.DBModels;
+namespace InfrastructureService.Domain;
 
 public partial class Payment
 {
-    [Key]
     public Guid Id { get; set; }
 
     public Guid UserId { get; set; }
 
-    [Column(TypeName = "decimal(10, 2)")]
     public decimal Amount { get; set; }
 
     public Guid? Status { get; set; }
 
-    [Column(TypeName = "datetime")]
     public DateTime? CreatedAt { get; set; }
 
-    [ForeignKey("Status")]
-    [InverseProperty("Payments")]
     public virtual PaymentsStatus StatusNavigation { get; set; }
 
-    [InverseProperty("Payment")]
     public virtual ICollection<Transaction> Transactions { get; set; } = new List<Transaction>();
 
-    [ForeignKey("UserId")]
-    [InverseProperty("Payments")]
     public virtual User User { get; set; }
 }

@@ -6,37 +6,25 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
 
-namespace InfrastructureService.DBModels;
+namespace InfrastructureService.Domain;
 
-[Index("Email", Name = "UQ__Users__A9D105348D0D612F", IsUnique = true)]
 public partial class User
 {
-    [Key]
     public Guid Id { get; set; }
 
-    [Required]
-    [StringLength(100)]
     public string Name { get; set; }
 
-    [Required]
-    [StringLength(255)]
     public string Email { get; set; }
 
-    [Required]
-    [StringLength(255)]
     public string PasswordHash { get; set; }
 
     public bool? TwoFactorEnabled { get; set; }
 
-    [Column(TypeName = "datetime")]
     public DateTime? CreatedAt { get; set; }
 
-    [InverseProperty("User")]
     public virtual ICollection<Notification> Notifications { get; set; } = new List<Notification>();
 
-    [InverseProperty("User")]
     public virtual ICollection<Payment> Payments { get; set; } = new List<Payment>();
 
-    [InverseProperty("User")]
     public virtual ICollection<WhatsAppMessage> WhatsAppMessages { get; set; } = new List<WhatsAppMessage>();
 }

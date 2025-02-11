@@ -6,27 +6,19 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
 
-namespace InfrastructureService.DBModels;
+namespace InfrastructureService.Domain;
 
 public partial class Transaction
 {
-    [Key]
     public Guid Id { get; set; }
 
-    [Required]
-    [StringLength(255)]
     public string TransactionId { get; set; }
 
     public Guid PaymentId { get; set; }
 
-    [Required]
-    [StringLength(100)]
     public string Gateway { get; set; }
 
-    [Column(TypeName = "datetime")]
     public DateTime? CreatedAt { get; set; }
 
-    [ForeignKey("PaymentId")]
-    [InverseProperty("Transactions")]
     public virtual Payment Payment { get; set; }
 }

@@ -6,26 +6,21 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
 
-namespace InfrastructureService.DBModels;
+namespace InfrastructureService.Domain;
 
-public partial class Notification
+public partial class WhatsAppMessage
 {
-    [Key]
     public Guid Id { get; set; }
 
     public Guid UserId { get; set; }
 
-    [Required]
-    [StringLength(50)]
-    public string Type { get; set; }
+    public string MessageContent { get; set; }
 
-    [Required]
-    public string Content { get; set; }
-
-    [Column(TypeName = "datetime")]
     public DateTime? SentAt { get; set; }
 
-    [ForeignKey("UserId")]
-    [InverseProperty("Notifications")]
+    public Guid? Status { get; set; }
+
+    public virtual WhatsAppMessagesStatus StatusNavigation { get; set; }
+
     public virtual User User { get; set; }
 }
