@@ -7,11 +7,13 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using DropshippingAdmin.Infrastructure;
 using InfrastructureService.Domain;
+using Microsoft.AspNetCore.Authorization;
 
 namespace DropshippingAdmin.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class MessagesStatusController : ControllerBase
     {
         private readonly DropshippingAdminContext _context;

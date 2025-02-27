@@ -27,4 +27,5 @@ public partial class User
     public virtual ICollection<Payment> Payments { get; set; } = new List<Payment>();
 
     public virtual ICollection<Message> Messages { get; set; } = new List<Message>();
+    public string Token { get; internal set; }
 }
