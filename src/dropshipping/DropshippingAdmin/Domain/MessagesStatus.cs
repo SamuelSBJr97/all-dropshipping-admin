@@ -8,23 +8,13 @@ using Microsoft.EntityFrameworkCore;
 
 namespace InfrastructureService.Domain;
 
-public partial class User
+public partial class MessagesStatus
 {
     public Guid Id { get; set; }
 
-    public string Name { get; set; }
+    public string Status { get; set; }
 
-    public string Email { get; set; }
-
-    public string PasswordHash { get; set; }
-
-    public bool? TwoFactorEnabled { get; set; }
-
-    public DateTime? CreatedAt { get; set; }
-
-    public virtual ICollection<Notification> Notifications { get; set; } = new List<Notification>();
-
-    public virtual ICollection<Payment> Payments { get; set; } = new List<Payment>();
+    public DateTime? SentAt { get; set; }
 
     public virtual ICollection<Message> Messages { get; set; } = new List<Message>();
 }
