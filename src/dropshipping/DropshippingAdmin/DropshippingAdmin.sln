@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DropshippingAdmin", "DropshippingAdmin.csproj", "{1C2AE9CE-B623-48E3-BBF4-D7A48EA37F14}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DropshippingAdmin.MSTest", "..\DropshippingAdmin.MSTest\DropshippingAdmin.MSTest.csproj", "{4D9BF223-3380-42D4-80AF-9594791E3F21}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DropshippingAdminApi", "DropshippingAdminApi.csproj", "{1C2AE9CE-B623-48E3-BBF4-D7A48EA37F14}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,12 +15,11 @@ Global
 		{1C2AE9CE-B623-48E3-BBF4-D7A48EA37F14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C2AE9CE-B623-48E3-BBF4-D7A48EA37F14}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C2AE9CE-B623-48E3-BBF4-D7A48EA37F14}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4D9BF223-3380-42D4-80AF-9594791E3F21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4D9BF223-3380-42D4-80AF-9594791E3F21}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4D9BF223-3380-42D4-80AF-9594791E3F21}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4D9BF223-3380-42D4-80AF-9594791E3F21}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9DCE4AB3-AB32-48AE-8442-24885033C89E}
 	EndGlobalSection
 EndGlobal
