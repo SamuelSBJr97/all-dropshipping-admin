@@ -1,6 +1,6 @@
 // NotificationService.Application/Commands/SendWhatsAppNotificationCommand.cs - Scaffold do arquivo
 
-namespace DropshippingAdmin.NotificationService.Application.Commands
+namespace DropshippingAdmin.Auth.Application.Commands
 {
     public class SendWhatsAppNotificationCommand
     {

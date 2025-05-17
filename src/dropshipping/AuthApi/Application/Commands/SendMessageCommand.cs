@@ -1,6 +1,6 @@
 // WhatsAppService.Application/Commands/SendMessageCommand.cs - Scaffold do arquivo
 
-namespace DropshippingAdmin.WhatsAppService.Application.Commands
+namespace DropshippingAdmin.Auth.Application.Commands
 {
     public class SendMessageCommand
     {

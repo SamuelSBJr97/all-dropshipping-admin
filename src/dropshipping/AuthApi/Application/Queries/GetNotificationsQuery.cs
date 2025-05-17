@@ -1,6 +1,6 @@
 // NotificationService.Application/Queries/GetNotificationsQuery.cs - Scaffold do arquivo
 
-namespace DropshippingAdmin.NotificationService.Application.Queries
+namespace DropshippingAdmin.Auth.Application.Queries
 {
     public class GetNotificationsQuery
     {

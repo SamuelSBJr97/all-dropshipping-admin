@@ -1,6 +1,6 @@
 // AuthService.Application/Commands/LoginCommand.cs - Scaffold do arquivo
 
-namespace DropshippingAdmin.AuthService.Application.Commands
+namespace DropshippingAdmin.Auth.Application.Commands
 {
     public class LoginCommand
     {

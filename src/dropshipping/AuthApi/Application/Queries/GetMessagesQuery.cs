@@ -1,6 +1,6 @@
 // WhatsAppService.Application/Queries/GetMessagesQuery.cs - Scaffold do arquivo
 
-namespace DropshippingAdmin.WhatsAppService.Application.Queries
+namespace DropshippingAdmin.Auth.Application.Queries
 {
     public class GetMessagesQuery
     {

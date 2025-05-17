@@ -1,6 +1,6 @@
 // AuthService.Application/Queries/GetUserQuery.cs - Scaffold do arquivo
 
-namespace DropshippingAdmin.AuthService.Application.Queries
+namespace DropshippingAdmin.Auth.Application.Queries
 {
     public class GetUserQuery
     {

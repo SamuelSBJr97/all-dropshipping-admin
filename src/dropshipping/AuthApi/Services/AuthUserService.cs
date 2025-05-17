@@ -1,18 +1,14 @@
-﻿using System.IdentityModel.Tokens.Jwt;
+﻿using DropshippingAdmin.Auth.Domain;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
-using DropshippingAdmin.Infrastructure;
-using InfrastructureService.Domain;
-using Microsoft.CodeAnalysis.Scripting;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.IdentityModel.Tokens;
 
-namespace DropshippingAdmin.Services
+namespace DropshippingAdmin.Auth.Services
 {
-    public class AuthUserService(DropshippingAdminContext context, IConfiguration configuration) : IAuthUserService
+    public class AuthUserService(IConfiguration configuration) : IAuthUserService
     {
-        private readonly DropshippingAdminContext _context = context ?? throw new ArgumentNullException(nameof(context));
         public string Secret { get; } = configuration.GetValue<string>("JwtSecret") ?? throw new ArgumentNullException(nameof(configuration));
 
         public async Task<User?> Authenticate(string email, string password)

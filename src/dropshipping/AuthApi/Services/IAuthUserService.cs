@@ -1,6 +1,6 @@
-﻿using InfrastructureService.Domain;
+﻿using DropshippingAdmin.Auth.Domain;
 
-namespace DropshippingAdmin.Services
+namespace DropshippingAdmin.Auth.Services
 {
     public interface IAuthUserService
     {

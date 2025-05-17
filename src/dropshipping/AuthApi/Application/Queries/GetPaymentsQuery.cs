@@ -1,6 +1,6 @@
 // PaymentService.Application/Queries/GetPaymentsQuery.cs - Scaffold do arquivo
 
-namespace DropshippingAdmin.PaymentService.Application.Queries
+namespace DropshippingAdmin.Auth.Application.Queries
 {
     public class GetPaymentsQuery
     {
