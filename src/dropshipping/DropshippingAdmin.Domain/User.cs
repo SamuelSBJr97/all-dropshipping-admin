@@ -20,5 +20,5 @@ public partial class User
 
     public virtual ICollection<Message> Messages { get; set; } = new List<Message>();
 
-    public string Token { get; internal set; }
+    public virtual string Token { get; set; }
 }

@@ -1,7 +1,7 @@
 // AuthService.Application/Commands/RegisterCommand.cs - Scaffold do arquivo
 
 using DropshippingAdmin.Application.Models;
-using InfrastructureService.Domain;
+using DropshippingAdmin.Domain;
 
 namespace DropshippingAdmin.AuthService.Application.Commands
 {
@@ -23,13 +23,12 @@ namespace DropshippingAdmin.AuthService.Application.Commands
                 // Por enquanto, vamos apenas retornar um objeto Login com os dados fornecidos.
                 return new User
                 {
+                    Name = registerCommandModel.Name,
                     Email = registerCommandModel.Email,
-                    Password = registerCommandModel.Password,
-                    Token = Guid.NewGuid().ToString(), // Simulando um token gerado
-                    IsAuthenticated = true,
-                    IsBlocked = false,
-                    IsExpired = false,
-                    IsTwoFactorEnabled = false
+                    PasswordHash = registerCommandModel.PasswordHash,
+                    TwoFactorEnabled = registerCommandModel.TwoFactorEnabled,
+                    CreatedAt = DateTime.UtcNow,
+                    Token = Guid.NewGuid().ToString()
                 };
         }
     }

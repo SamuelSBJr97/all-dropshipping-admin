@@ -14,4 +14,11 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DropshippingAdmin.Application.Identity\DropshippingAdmin.Application.Identity.csproj" />
+    <ProjectReference Include="..\DropshippingAdmin.Domain.Identity\DropshippingAdmin.Domain.Identity.csproj" />
+    <ProjectReference Include="..\DropshippingAdmin.Infrastructure.Identity\DropshippingAdmin.Infrastructure.Identity.csproj" />
+    <ProjectReference Include="..\DropshippingAdmin.Services.Identity\DropshippingAdmin.Services.Identity.csproj" />
+  </ItemGroup>
+
 </Project>

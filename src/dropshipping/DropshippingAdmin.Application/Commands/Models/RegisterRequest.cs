@@ -1,4 +1,4 @@
-﻿using InfrastructureService.Domain;
+﻿using DropshippingAdmin.Domain;
 using System;
 using System.Collections.Generic;
 using System.Linq;

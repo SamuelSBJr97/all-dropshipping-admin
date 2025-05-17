@@ -16,4 +16,11 @@
     <Folder Include="Infrastructure\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DropshippingAdmin.Application.Auth\DropshippingAdmin.Application.Auth.csproj" />
+    <ProjectReference Include="..\DropshippingAdmin.Domain.Auth\DropshippingAdmin.Domain.Auth.csproj" />
+    <ProjectReference Include="..\DropshippingAdmin.Infrastructure.Auth\DropshippingAdmin.Infrastructure.Auth.csproj" />
+    <ProjectReference Include="..\DropshippingAdmin.Services.Auth\DropshippingAdmin.Services.Auth.csproj" />
+  </ItemGroup>
+
 </Project>

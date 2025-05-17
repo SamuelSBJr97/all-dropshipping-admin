@@ -18,4 +18,11 @@
     <Folder Include="Services\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DropshippingAdmin.Application.Payment\DropshippingAdmin.Application.Payment.csproj" />
+    <ProjectReference Include="..\DropshippingAdmin.Domain.Payment\DropshippingAdmin.Domain.Payment.csproj" />
+    <ProjectReference Include="..\DropshippingAdmin.Infrastructure.Payment\DropshippingAdmin.Infrastructure.Payment.csproj" />
+    <ProjectReference Include="..\DropshippingAdmin.Services.Payment\DropshippingAdmin.Services.Payment.csproj" />
+  </ItemGroup>
+
 </Project>

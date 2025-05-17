@@ -10,4 +10,11 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DropshippingAdmin.Application.Message\DropshippingAdmin.Application.Message.csproj" />
+    <ProjectReference Include="..\DropshippingAdmin.Domain.Message\DropshippingAdmin.Domain.Message.csproj" />
+    <ProjectReference Include="..\DropshippingAdmin.Infrastructure.Message\DropshippingAdmin.Infrastructure.Message.csproj" />
+    <ProjectReference Include="..\DropshippingAdmin.Services.Message\DropshippingAdmin.Services.Message.csproj" />
+  </ItemGroup>
+
 </Project>
