@@ -6,8 +6,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\DropshippingAdmin.Domain.Message\DropshippingAdmin.Domain.Message.csproj" />
-  </ItemGroup>
-
 </Project>

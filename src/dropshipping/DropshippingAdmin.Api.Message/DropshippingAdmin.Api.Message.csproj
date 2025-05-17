@@ -11,10 +11,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DropshippingAdmin.Application.Message\DropshippingAdmin.Application.Message.csproj" />
-    <ProjectReference Include="..\DropshippingAdmin.Domain.Message\DropshippingAdmin.Domain.Message.csproj" />
-    <ProjectReference Include="..\DropshippingAdmin.Infrastructure.Message\DropshippingAdmin.Infrastructure.Message.csproj" />
-    <ProjectReference Include="..\DropshippingAdmin.Services.Message\DropshippingAdmin.Services.Message.csproj" />
+    <ProjectReference Include="..\DropshippingAdmin.Application\DropshippingAdmin.Application.csproj" />
+    <ProjectReference Include="..\DropshippingAdmin.Domain\DropshippingAdmin.Domain.csproj" />
+    <ProjectReference Include="..\DropshippingAdmin.Infrastructure\DropshippingAdmin.Infrastructure.csproj" />
+    <ProjectReference Include="..\DropshippingAdmin.Services\DropshippingAdmin.Services.csproj" />
   </ItemGroup>
 
 </Project>

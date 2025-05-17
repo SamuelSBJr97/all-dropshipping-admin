@@ -15,10 +15,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DropshippingAdmin.Application.Identity\DropshippingAdmin.Application.Identity.csproj" />
-    <ProjectReference Include="..\DropshippingAdmin.Domain.Identity\DropshippingAdmin.Domain.Identity.csproj" />
-    <ProjectReference Include="..\DropshippingAdmin.Infrastructure.Identity\DropshippingAdmin.Infrastructure.Identity.csproj" />
-    <ProjectReference Include="..\DropshippingAdmin.Services.Identity\DropshippingAdmin.Services.Identity.csproj" />
+    <ProjectReference Include="..\DropshippingAdmin.Application\DropshippingAdmin.Application.csproj" />
+    <ProjectReference Include="..\DropshippingAdmin.Domain\DropshippingAdmin.Domain.csproj" />
+    <ProjectReference Include="..\DropshippingAdmin.Infrastructure\DropshippingAdmin.Infrastructure.csproj" />
+    <ProjectReference Include="..\DropshippingAdmin.Services\DropshippingAdmin.Services.csproj" />
   </ItemGroup>
 
 </Project>
