@@ -4,21 +4,23 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.EntityFrameworkCore;
 
-namespace DropshippingAdmin.Auth.Domain;
+namespace InfrastructureService.Domain;
 
-public partial class Notification
+public partial class Message
 {
-    [Key]
     public Guid Id { get; set; }
 
     public Guid UserId { get; set; }
 
-    public string Type { get; set; }
-
-    public string Content { get; set; }
+    public string MessageContent { get; set; }
 
     public DateTime? SentAt { get; set; }
+
+    public Guid? Status { get; set; }
+
+    public virtual MessagesStatus StatusNavigation { get; set; }
 
     public virtual User User { get; set; }
 }

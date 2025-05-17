@@ -4,8 +4,9 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.EntityFrameworkCore;
 
-namespace DropshippingAdmin.Auth.Domain;
+namespace InfrastructureService.Domain;
 
 public partial class Payment
 {
