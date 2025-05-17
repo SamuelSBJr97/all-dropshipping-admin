@@ -5,15 +5,15 @@ VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DropshippingAdmin.Api", "DropshippingAdmin.Api.csproj", "{1C2AE9CE-B623-48E3-BBF4-D7A48EA37F14}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Payments.Api", "..\PaymentsApi\Payments.Api.csproj", "{A8A38D91-2970-4B22-9E03-63522E55C81A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DropshippingAdmin.Payment.Api", "..\PaymentsApi\DropshippingAdmin.Payment.Api.csproj", "{A8A38D91-2970-4B22-9E03-63522E55C81A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Messages.Api", "..\MessagesApi\Messages.Api.csproj", "{3BEBD620-CCEB-49DB-8D66-9B25A8658E6C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DropshippingAdmin.Message.Api", "..\MessagesApi\DropshippingAdmin.Message.Api.csproj", "{3BEBD620-CCEB-49DB-8D66-9B25A8658E6C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{68E59517-18DE-41B1-9311-E19FCA23BDE1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Auth.Api", "..\AuthApi\Auth.Api.csproj", "{ADD6450B-74CB-429A-8B59-E4B11540B80F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DropshippingAdmin.Auth.Api", "..\AuthApi\DropshippingAdmin.Auth.Api.csproj", "{ADD6450B-74CB-429A-8B59-E4B11540B80F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Identity.Api", "..\IdentityApi\Identity.Api.csproj", "{440E1DE2-9645-4967-8366-165F61AB5D19}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DropshippingAdmin.Identity.Api", "..\IdentityApi\DropshippingAdmin.Identity.Api.csproj", "{440E1DE2-9645-4967-8366-165F61AB5D19}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
