@@ -1,0 +1,104 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Application\Commands\Auth\" />
+    <Folder Include="Application\Commands\Core\" />
+    <Folder Include="Application\Commands\Identity\" />
+    <Folder Include="Application\Commands\Message\" />
+    <Folder Include="Application\Commands\Report\" />
+    <Folder Include="Application\Commands\Payment\" />
+    <Folder Include="Application\Dtos\Auth\" />
+    <Folder Include="Application\Dtos\Core\" />
+    <Folder Include="Application\Dtos\Identity\" />
+    <Folder Include="Application\Dtos\Message\" />
+    <Folder Include="Application\Dtos\Report\" />
+    <Folder Include="Application\Dtos\Payment\" />
+    <Folder Include="Application\Handlers\Commands\Auth\" />
+    <Folder Include="Application\Handlers\Commands\Core\" />
+    <Folder Include="Application\Handlers\Commands\Identity\" />
+    <Folder Include="Application\Handlers\Commands\Message\" />
+    <Folder Include="Application\Handlers\Commands\Report\" />
+    <Folder Include="Application\Handlers\Commands\Payment\" />
+    <Folder Include="Application\Handlers\Queries\Core\" />
+    <Folder Include="Application\Handlers\Queries\Auth\" />
+    <Folder Include="Application\Handlers\Queries\Identity\" />
+    <Folder Include="Application\Handlers\Queries\Message\" />
+    <Folder Include="Application\Handlers\Queries\Payment\" />
+    <Folder Include="Application\Handlers\Queries\Report\" />
+    <Folder Include="Application\Queries\Auth\" />
+    <Folder Include="Application\Queries\Identity\" />
+    <Folder Include="Application\Queries\Core\" />
+    <Folder Include="Application\Queries\Message\" />
+    <Folder Include="Application\Queries\Report\" />
+    <Folder Include="Application\Queries\Payment\" />
+    <Folder Include="Application\Validators\Commands\Core\" />
+    <Folder Include="Application\Validators\Commands\Auth\" />
+    <Folder Include="Application\Validators\Commands\Identity\" />
+    <Folder Include="Application\Validators\Commands\Message\" />
+    <Folder Include="Application\Validators\Commands\Report\" />
+    <Folder Include="Application\Validators\Commands\Payment\" />
+    <Folder Include="Application\Validators\Queries\Core\" />
+    <Folder Include="Application\Validators\Queries\Auth\" />
+    <Folder Include="Application\Validators\Queries\Identity\" />
+    <Folder Include="Application\Validators\Queries\Message\" />
+    <Folder Include="Application\Validators\Queries\Report\" />
+    <Folder Include="Application\Validators\Queries\Payment\" />
+    <Folder Include="Contracts\Dtos\Core\" />
+    <Folder Include="Contracts\Dtos\Auth\" />
+    <Folder Include="Contracts\Dtos\Identity\" />
+    <Folder Include="Contracts\Dtos\Message\" />
+    <Folder Include="Contracts\Dtos\Report\" />
+    <Folder Include="Contracts\Dtos\Payment\" />
+    <Folder Include="Contracts\Events\Core\" />
+    <Folder Include="Contracts\Events\Auth\" />
+    <Folder Include="Contracts\Events\Identity\" />
+    <Folder Include="Contracts\Events\Message\" />
+    <Folder Include="Contracts\Events\Report\" />
+    <Folder Include="Contracts\Events\Payment\" />
+    <Folder Include="Contracts\Interfaces\Core\" />
+    <Folder Include="Contracts\Interfaces\Auth\" />
+    <Folder Include="Contracts\Interfaces\Identity\" />
+    <Folder Include="Contracts\Interfaces\Message\" />
+    <Folder Include="Contracts\Interfaces\Report\" />
+    <Folder Include="Contracts\Interfaces\Payment\" />
+    <Folder Include="Contracts\Requests\Core\" />
+    <Folder Include="Contracts\Requests\Auth\" />
+    <Folder Include="Contracts\Requests\Identity\" />
+    <Folder Include="Contracts\Requests\Message\" />
+    <Folder Include="Contracts\Requests\Report\" />
+    <Folder Include="Contracts\Requests\Payment\" />
+    <Folder Include="Contracts\Responses\Core\" />
+    <Folder Include="Contracts\Responses\Auth\" />
+    <Folder Include="Contracts\Responses\Identity\" />
+    <Folder Include="Contracts\Responses\Message\" />
+    <Folder Include="Contracts\Responses\Report\" />
+    <Folder Include="Contracts\Responses\Payment\" />
+    <Folder Include="Domain\Core\" />
+    <Folder Include="Domain\Auth\" />
+    <Folder Include="Domain\Identity\" />
+    <Folder Include="Domain\Message\" />
+    <Folder Include="Domain\Report\" />
+    <Folder Include="Domain\Payment\" />
+    <Folder Include="Infrastructure\Data\" />
+    <Folder Include="Infrastructure\Repositories\" />
+    <Folder Include="Services\Core\" />
+    <Folder Include="Services\Auth\" />
+    <Folder Include="Services\Identity\" />
+    <Folder Include="Services\Message\" />
+    <Folder Include="Services\Report\" />
+    <Folder Include="Services\Payment\" />
+    <Folder Include="Shared\Extensions\" />
+    <Folder Include="Shared\Constants\" />
+    <Folder Include="Shared\Exceptions\" />
+    <Folder Include="Shared\Enums\" />
+    <Folder Include="Shared\Utils\" />
+    <Folder Include="Shared\Validators\" />
+  </ItemGroup>
+
+</Project>
