@@ -1,0 +1,8 @@
+<Window x:Class="DropshippingAdmin.Desktop.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="DropshippingAdmin Desktop" Height="350" Width="525">
+    <Grid>
+        <TextBlock Text="DropshippingAdmin Desktop App" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="24"/>
+    </Grid>
+</Window>

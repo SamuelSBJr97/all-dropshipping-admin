@@ -1,0 +1,44 @@
+src/
+├── Core/
+│   ├── Domain/
+│   │   ├── Entities/
+│   │   ├── ValueObjects/
+│   │   ├── Aggregates/
+│   │   ├── Events/
+│   │   ├── Rules/
+│   │   └── Repositories/
+│   ├── Application/
+│   │   ├── Commands/
+│   │   ├── Queries/
+│   │   ├── Dtos/
+│   │   ├── Events/
+│   │   ├── Validators/
+│   │   ├── Handlers/
+│   │   └── Mappings/
+│   ├── Contracts/ (opcional, para DTOs e eventos compartilhados)
+│   └── Shared/ (utilitários, middlewares, exceptions, logging)
+├── Infrastructure/
+│   ├── Data/
+│   │   ├── Context/
+│   │   ├── Configurations/
+│   │   └── Migrations/
+│   ├── Messaging/
+│   │   └── RabbitMQ/
+│   ├── Repositories/
+│   ├── Services/
+│   └── DependencyInjection/
+├── Api/
+│   ├── DropshippingAdmin.Api/
+│   │   ├── Controllers/
+│   │   ├── Middlewares/
+│   │   ├── Program.cs
+│   │   └── appsettings.json
+│   ├── DropshippingAdmin.Api.Auth/
+│   ├── DropshippingAdmin.Api.Identity/
+│   ├── DropshippingAdmin.Api.Message/
+│   └── DropshippingAdmin.Api.Payment/
+├── Desktop/
+│   └── DropshippingAdmin.Desktop/ (WPF ou MAUI)
+├── App/
+│   └── DropshippingAdmin.App/ (MAUI)
+└── docker-compose.yml
