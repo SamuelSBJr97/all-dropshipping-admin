@@ -1,6 +1,0 @@
-@DropshippingAdmin_HostAddress = http://localhost:5032
-
-GET {{DropshippingAdmin_HostAddress}}/
-Accept: application/json
-
-###

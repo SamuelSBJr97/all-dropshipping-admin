@@ -17,5 +17,25 @@ namespace DropshippingAdmin.Infrastructure.DependencyInjection
             // Adicione outros serviços de infraestrutura aqui
             return services;
         }
+
+        public static IServiceCollection AddDropshippingAdminServices(this IServiceCollection services, string connectionString)
+        {
+            services.AddDbContext<DropshippingAdminDbContext>(options =>
+                options.UseSqlServer(connectionString));
+
+            services.AddScoped<IPaymentRepository, PaymentRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<INotificationRepository, NotificationRepository>();
+            services.AddScoped<ITransactionRepository, TransactionRepository>();
+            services.AddScoped<IAdminUserRepository, AdminUserRepository>();
+            services.AddScoped<IWhatsAppMessageRepository, WhatsAppMessageRepository>();
+            services.AddScoped<IWhatsAppMessagesStatusRepository, WhatsAppMessagesStatusRepository>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+            services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblyContaining<DropshippingAdmin.Core.Application.Handlers.Commands.CreatePaymentCommandHandler>());
+            services.AddAutoMapper(typeof(DropshippingAdmin.Core.Application.Mappings.PaymentProfile));
+
+            return services;
+        }
     }
 }
